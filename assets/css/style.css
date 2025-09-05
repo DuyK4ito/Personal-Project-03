@@ -12,7 +12,8 @@ html {
     --primary-color: #2e80ce;
     --secondary-color: #10375c;
     --header-font-color: #c9d2da;
-    --common-font-color: #575f66;
+    --desc-color: #575f66;
+    --bg-color: #f6fbff;
     --footer-font-color: #a9b3bb;
 }
 
@@ -50,6 +51,45 @@ body {
     font-weight: 600;
 }
 
+.heading.lv3 {
+    color: var(--secondary-color);
+    font-family: Sora;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+    margin-top: 38px;
+}
+
+.switch__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575f66;
+    border-radius: 50%;
+}
+
+.switch__btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.switch__btn:hover .chevron {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+        hue-rotate(318deg) brightness(104%) contrast(103%);
+}
+
+.chevron-right {
+    rotate: 180deg;
+}
+
 /* ============================ Header ============================ */
 .header {
     padding-top: 28px;
@@ -65,7 +105,7 @@ body {
     position: sticky;
     top: -8px;
     z-index: 999;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     background: var(--secondary-color);
 }
 
@@ -205,9 +245,6 @@ body {
 }
 
 .services__label {
-    color: var(--secondary-color);
-    font-size: 5rem;
-    font-weight: 600;
     line-height: 1.2;
     letter-spacing: -1px;
 }
@@ -215,7 +252,7 @@ body {
 .services__desc {
     margin-top: 18px;
     width: 468px;
-    color: var(--common-font-color);
+    color: var(--desc-color);
     font-size: 1.8rem;
     font-weight: 300;
     text-align: center;
@@ -279,7 +316,7 @@ body {
 .services-item__desc {
     margin-top: 8px;
     width: 351px;
-    color: var(--common-font-color);
+    color: var(--desc-color);
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75;
@@ -288,3 +325,239 @@ body {
 .services-cta {
     margin-top: 55px;
 }
+
+/* ============================ How it works ============================ */
+.how-it-works {
+    padding: 100px 0 116px;
+    margin-top: 170px;
+    background: #f6fbff;
+}
+
+.how-it-works__desc {
+    width: 468px;
+    margin-top: 18px;
+    color: var(--desc-color);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+.how-it-works-bottom {
+    margin-top: 70px;
+}
+
+.how-it-works-group {
+    display: flex;
+}
+
+.how-it-works-item:hover {
+    transform: translateY(-25px);
+    border: 16px solid #2e80ce;
+}
+
+.how-it-works-item:hover .how-it-works-item__cta {
+    color: var(--primary-color);
+}
+
+.how-it-works-item {
+    width: 33.33%;
+    padding: 43px;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.how-it-works-item + .how-it-works-item {
+    margin-left: 30px;
+}
+
+.how-it-works-item__title {
+    margin-top: 18px;
+}
+
+.how-it-works-item__desc {
+    margin-top: 28px;
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.how-it-works-item__cta {
+    display: inline-block;
+    padding: 4px;
+    margin-top: 18px;
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+/* ============================ Features ============================ */
+.features {
+    padding: 65px 0;
+    margin-top: 105px;
+}
+
+.features-content {
+    display: flex;
+}
+
+.features-left {
+    width: 48.7%;
+}
+
+.features-img {
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.features-left {
+    position: relative;
+}
+
+.features-img:first-child {
+    width: 512px;
+    height: 370px;
+}
+
+.features-img:nth-child(2) {
+    position: absolute;
+    top: 121px;
+    left: 238px;
+    width: 332px;
+    height: 370px;
+}
+
+.features-right {
+    margin-top: 82px;
+    margin-left: 188px;
+}
+
+.features-right__heading {
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.features-right__desc {
+    margin-top: 18px;
+    color: var(--desc-color);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+.features-right__cta {
+    margin-top: 38px;
+}
+
+/* ============================ Members ============================ */
+.members {
+    padding: 65px;
+    margin-top: 123px;
+}
+
+.members-top {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.members-cta {
+    margin-top: 38px;
+}
+
+.members-group {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 34px;
+}
+
+.members-img-wrapper {
+    background-color: #eaf6ff;
+    padding-top: 28px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.members-img-wrapper:hover .members-img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.members-img {
+    transition: 0.25s;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.members-info-wrapper {
+    margin-top: 12px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.members-item__name {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.members-item__desc {
+    color: var(--desc-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+/* ============================ Install app ============================ */
+.install {
+    margin-top: 200px;
+}
+
+.install-content {
+    display: flex;
+    column-gap: 160px;
+    height: 427px;
+    background-color: var(--primary-color);
+}
+
+.install-content__left {
+    position: relative;
+    bottom: 95px;
+    margin-left: 70px;
+}
+
+.install-content__right {
+    max-width: 586px;
+    margin: 76px 0 75px;
+}
+
+.heading.lv2.install-heading {
+    color: #fff;
+}
+
+.install-desc {
+    margin-top: 22px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+.install-app {
+    margin-top: 38px;
+}
+
+.install-app__icon + .install-app__icon {
+    margin-left: 28px;
+}
+
+/* ============================ Blog ============================ */

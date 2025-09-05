@@ -111,21 +111,23 @@
                             <ul class="navbar__list">
                                 <li class="navbar__item">
                                     <a
-                                        href="#!"
+                                        href="#"
                                         class="navbar__link navbar__link--active"
                                         >Home</a
                                     >
                                 </li>
                                 <li class="navbar__item">
-                                    <a href="#!" class="navbar__link"
+                                    <a href="#services-sec" class="navbar__link"
                                         >Services</a
                                     >
                                 </li>
                                 <li class="navbar__item">
-                                    <a href="#!" class="navbar__link">About</a>
+                                    <a href="#about-sec" class="navbar__link"
+                                        >About</a
+                                    >
                                 </li>
                                 <li class="navbar__item">
-                                    <a href="#!" class="navbar__link"
+                                    <a href="#doctors-sec" class="navbar__link"
                                         >Doctors</a
                                     >
                                 </li>
@@ -176,10 +178,13 @@
             </div>
 
             <main>
-                <div class="services">
+                <!-- Services -->
+                <section class="services" id="services-sec">
                     <div class="container">
                         <div class="services-top">
-                            <div class="services__label">Our services</div>
+                            <div class=".services__label heading lv2">
+                                Our services
+                            </div>
                             <div class="services__desc">
                                 Exceptional dental care for all ages. Your great
                                 smile begins with a great dentist.
@@ -286,6 +291,277 @@
                                 <button class="btn services-cta">
                                     All Services
                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- How it works -->
+                <section class="how-it-works" id="about-sec">
+                    <div class="container">
+                        <div class="how-it-works-top">
+                            <h2 class="heading lv2 how-it-works__label">
+                                How it works
+                            </h2>
+                            <p class="how-it-works__desc">
+                                Exceptional dental care for all ages. Your great
+                                smile begins with a great dentist.
+                            </p>
+                        </div>
+
+                        <div class="how-it-works-bottom">
+                            <div class="how-it-works-group">
+                                <!-- Item 1 -->
+                                <div class="how-it-works-item">
+                                    <img
+                                        src="./assets/img/How-it-works/how-it-works-1.svg"
+                                        alt=""
+                                        class="how-it-works__icon"
+                                    />
+                                    <h3
+                                        class="how-it-works-item__title heading lv3"
+                                    >
+                                        Search doctor
+                                    </h3>
+                                    <p class="how-it-works-item__desc">
+                                        Search a doctor by education,
+                                        qualifications or experience-contact for
+                                        inquiry.
+                                    </p>
+                                    <a href="#!" class="how-it-works-item__cta">
+                                        Learn More
+                                    </a>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="how-it-works-item">
+                                    <img
+                                        src="./assets/img/How-it-works/how-it-works-2.svg"
+                                        alt=""
+                                        class="how-it-works__icon"
+                                    />
+                                    <h3
+                                        class="how-it-works-item__title heading lv3"
+                                    >
+                                        Find best doctor
+                                    </h3>
+                                    <p class="how-it-works-item__desc">
+                                        Search a doctor by education,
+                                        qualifications or experience-contact for
+                                        inquiry.
+                                    </p>
+                                    <a href="#!" class="how-it-works-item__cta"
+                                        >Learn More</a
+                                    >
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="how-it-works-item">
+                                    <img
+                                        src="./assets/img/How-it-works/how-it-works-3.svg"
+                                        alt=""
+                                        class="how-it-works__icon"
+                                    />
+                                    <h3
+                                        class="how-it-works-item__title heading lv3"
+                                    >
+                                        Get treatment
+                                    </h3>
+                                    <p class="how-it-works-item__desc">
+                                        Search a doctor by education,
+                                        qualifications or experience-contact for
+                                        inquiry.
+                                    </p>
+                                    <a href="#!" class="how-it-works-item__cta"
+                                        >Learn More</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Features -->
+                <section class="features">
+                    <div class="container">
+                        <div class="features-content">
+                            <div class="features-left">
+                                <img
+                                    src="./assets/img/Features/features-img-1.jpg"
+                                    alt=""
+                                    class="features-img"
+                                />
+                                <img
+                                    src="./assets/img/Features/features-img-2.jpg"
+                                    alt=""
+                                    class="features-img"
+                                />
+                            </div>
+                            <div class="features-right">
+                                <h2 class="heading lv2 features-right__heading">
+                                    Take back your smile with shine.
+                                </h2>
+                                <p class="features-right__desc">
+                                    If you’re missing multiple teeth due to
+                                    decay, injury, or the natural aging process,
+                                    dentures might be the perfect solution.
+                                </p>
+                                <button
+                                    href="#!"
+                                    class="btn features-right__cta"
+                                >
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Members -->
+                <section class="members" id="doctors-sec">
+                    <div class="container">
+                        <div class="members-content">
+                            <div class="members-top">
+                                <h2 class="heading lv2 members-top__heading">
+                                    Our virtual dentist
+                                </h2>
+                                <button class="btn members-cta">
+                                    Meet our dentist
+                                </button>
+                            </div>
+
+                            <div class="members-bottom">
+                                <div class="members-group">
+                                    <!-- Member 1 -->
+                                    <div class="members-item">
+                                        <div class="members-img-wrapper">
+                                            <img
+                                                src="./assets/img/Members/member-1.png"
+                                                alt=""
+                                                class="members-img"
+                                            />
+                                        </div>
+                                        <div class="members-info-wrapper">
+                                            <h4 class="members-item__name">
+                                                Dr. Essence Page
+                                            </h4>
+                                            <p class="members-item__desc">
+                                                DDS, California - Linda
+                                                University
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Member 2 -->
+                                    <div class="members-item">
+                                        <div class="members-img-wrapper">
+                                            <img
+                                                src="./assets/img/Members/member-2.png"
+                                                alt=""
+                                                class="members-img"
+                                            />
+                                        </div>
+                                        <div class="members-info-wrapper">
+                                            <h4 class="members-item__name">
+                                                Dr. Essence Page
+                                            </h4>
+                                            <p class="members-item__desc">
+                                                DDS, California - Linda
+                                                University
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Member 3 -->
+                                    <div class="members-item">
+                                        <div class="members-img-wrapper">
+                                            <img
+                                                src="./assets/img/Members/member-3.png"
+                                                alt=""
+                                                class="members-img"
+                                            />
+                                        </div>
+                                        <div class="members-info-wrapper">
+                                            <h4 class="members-item__name">
+                                                Dr. Essence Page
+                                            </h4>
+                                            <p class="members-item__desc">
+                                                DDS, California - Linda
+                                                University
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Member 4 -->
+                                    <div class="members-item">
+                                        <div class="members-img-wrapper">
+                                            <img
+                                                src="./assets/img/Members/member-4.png"
+                                                alt=""
+                                                class="members-img"
+                                            />
+                                        </div>
+                                        <div class="members-info-wrapper">
+                                            <h4 class="members-item__name">
+                                                Dr. Essence Page
+                                            </h4>
+                                            <p class="members-item__desc">
+                                                DDS, California - Linda
+                                                University
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="switch">
+                                <div class="switch__btn">
+                                    <img
+                                        src="./assets/img/Members/chevron-left.svg"
+                                        alt=""
+                                        class="chevron chevron-left"
+                                    />
+                                </div>
+                                <div class="switch__btn">
+                                    <img
+                                        src="./assets/img/Members/chevron-left.svg"
+                                        alt=""
+                                        class="chevron chevron-right"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Install app -->
+                <div class="install">
+                    <div class="container">
+                        <div class="install-content">
+                            <div class="install-content__left">
+                                <img
+                                    src="./assets/img/Install-app/phone-app.png"
+                                    alt=""
+                                    class="phone-thumb"
+                                />
+                            </div>
+                            <div class="install-content__right">
+                                <h2 class="heading lv2 install-heading">
+                                    Take back your smile with dentures
+                                </h2>
+                                <p class="install-desc">
+                                    If you’re missing multiple teeth due to
+                                    decay, injury, or the natural aging process,
+                                    dentures might be the perfect solution.
+                                </p>
+
+                                <div class="install-app">
+                                    <a href="#!" class="install-app__icon">
+                                        <img
+                                            src="./assets/img/Install-app/Google-Play-download.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="#!" class="install-app__icon">
+                                        <img
+                                            src="./assets/img/Install-app/Apple-download.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
