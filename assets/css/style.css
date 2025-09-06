@@ -38,6 +38,7 @@ body {
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 30px;
+    transition-duration: 0.3s;
 }
 
 .btn:hover {
@@ -53,10 +54,16 @@ body {
 
 .heading.lv3 {
     color: var(--secondary-color);
-    font-family: Sora;
     font-size: 2.6rem;
     font-weight: 600;
     line-height: 1.38;
+}
+
+.heading.lv4 {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
 }
 
 .switch {
@@ -74,6 +81,8 @@ body {
     height: 36px;
     border: 1px solid #575f66;
     border-radius: 50%;
+    transition: background-color;
+    transition-duration: 0.3s;
 }
 
 .switch__btn:hover {
@@ -120,6 +129,7 @@ body {
     font-weight: 300;
     line-height: 1.75;
     padding: 8px 21px;
+    transition: text-shadow 0.3s;
 }
 
 .navbar__link:hover,
@@ -148,6 +158,11 @@ body {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75;
+    transition: text-shadow 0.3s;
+}
+
+.header-action__login:hover {
+    text-shadow: 1px 0 0 #fff;
 }
 
 .header-action__signup {
@@ -271,6 +286,7 @@ body {
     width: 470px;
     height: 128px;
     padding: 22px;
+    transition: box-shadow 0.3s;
 }
 
 .services-main-img .services-img {
@@ -289,6 +305,8 @@ body {
     height: 60px;
     border-radius: 50%;
     background: #eff6fd;
+    transition: color, background-color;
+    transition-duration: 0.3s;
 }
 
 .services-item:hover .services-item__left {
@@ -364,7 +382,8 @@ body {
     padding: 43px;
     border: 16px solid #eaf6ff;
     border-radius: 4px;
-    transition: 0.4s;
+    transition: transform, border, color;
+    transition-duration: 0.4s;
 }
 
 .how-it-works-item + .how-it-works-item {
@@ -502,13 +521,6 @@ body {
     align-items: center;
 }
 
-.members-item__name {
-    color: var(--secondary-color);
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.75;
-}
-
 .members-item__desc {
     color: var(--desc-color);
     font-size: 1.4rem;
@@ -561,3 +573,305 @@ body {
 }
 
 /* ============================ Blog ============================ */
+.blog {
+    padding: 85px 0;
+    margin-top: 85px;
+}
+
+.blog-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-left {
+    width: 40%;
+}
+
+.blog-cta {
+    margin-top: 28px;
+    color: #10375c;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.55;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.blog-switch {
+    margin-top: 28px;
+    justify-content: flex-start;
+}
+
+.blog-group {
+    display: flex;
+    column-gap: 30px;
+}
+
+.blog-post {
+    max-width: 270px;
+    background-color: #fff;
+    border-radius: 12px;
+    transition: box-shadow 0.25s;
+    overflow: hidden;
+}
+
+.blog-post:hover {
+    box-shadow: 0 18px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.blog-post:hover .blog-post__content {
+    border-color: #fff;
+}
+
+.blog-post:hover .blog-thumb {
+    transform: scale(1.1);
+}
+
+.blog-thumb-wrapper {
+    height: 172px;
+    overflow: hidden;
+}
+
+.blog-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    vertical-align: bottom;
+    transition: transform 0.25s;
+}
+
+.blog-post__content {
+    padding: 22px;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid #e8ebee;
+    border-top: none;
+}
+
+.blog-post__heading {
+    font-weight: 400;
+    line-height: 1.62;
+}
+
+.blog-post__desc {
+    margin-top: 10px;
+    color: var(--desc-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71;
+}
+
+.blog-post__cta {
+    margin-top: 12px;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.blog-post__cta:hover {
+    color: #2e80ce;
+}
+
+/* ============================ Appointment ============================ */
+.appointment {
+    margin-top: 85px;
+}
+
+.appointment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.appointment-heading {
+    position: relative;
+    padding-bottom: 22px;
+}
+
+.appointment-heading::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 136px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.appointment-desc {
+    max-width: 617px;
+    margin-top: 20px;
+    color: var(--desc-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.appointment-btn {
+    margin-top: 38px;
+}
+
+/* ============================ Footer ============================ */
+.footer {
+    font-family: "Open Sans";
+    padding: 100px 0 42px;
+    margin-top: 170px;
+    background-color: var(--secondary-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column.column-1 {
+    width: 28.7%;
+}
+
+.footer-column__desc {
+    margin-top: 21px;
+    color: var(--footer-font-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.column-label {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.column-items {
+    margin-top: 20px;
+}
+
+.column-items a {
+    color: var(--footer-font-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    transition: color, text-decoration, opacity;
+    transition-duration: 0.25s;
+}
+
+.column-items a:hover {
+    color: #aaaaaa;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.column-items li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.footer-column__bottom {
+    margin-top: 28px;
+}
+
+.social-group {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.social-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.25s;
+}
+
+.social-icon {
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+.social-bg:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.social-bg:hover .social-icon {
+    color: #fff;
+}
+
+.subscription-group {
+    margin-top: 10px;
+}
+
+.subscription-desc {
+    max-width: 273px;
+    margin-top: 20px;
+    color: var(--footer-font-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+input[type="email"] {
+    width: 212px;
+    height: 46px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background-color: transparent;
+}
+
+input[type="email"]:focus {
+    outline: none;
+}
+
+input[type="email"]::placeholder {
+    color: #9ca8b1;
+}
+
+.subscribe-btn {
+    min-width: 108px;
+    --height: 46px;
+    font-size: 1.4rem;
+    margin-left: 12px;
+    border-radius: 4px;
+}
+
+.subscription-group form {
+    display: flex;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+    margin-top: 30px;
+    border-top: 1px solid #406181;
+}
+
+.copyright-label {
+    color: #aab3ba;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
